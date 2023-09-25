@@ -1,0 +1,60 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sim</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to the Sim!</h1>
+    <button id="playButton">Play Game</button>
+    <script src="script.js"></script>
+</body>
+</html>
+
+javascript
+// Function to play the game
+function playGame() {
+    // Get the input value from the user
+    const inputValue = prompt("Enter a number:");
+
+    // Call the function to calculate the result
+    const result = calculateResult(inputValue);
+
+    // Display the result
+    alert(`The result is: ${result}`);
+}
+
+// Function to calculate the result
+function calculateResult(inputValue) {
+    // Convert the input value to a number
+    const number = parseInt(inputValue);
+
+    // Calculate the result
+    const result = number * 2;
+
+    // Return the result
+    return result;
+}
+
+// Get the button element by its ID
+const playButton = document.getElementById("playButton");
+
+// Add a click event listener to the button
+playButton.addEventListener("click", playGame);
+
+css
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+Here is the link to the GitHub repo files: [https://github.com/yourusername/sim](https://github.com/yourusername/sim) Here is the Live URL link so people can test and play your SIM: [https://yourusername.github.io/sim/](https://yourusername.github.io/sim/)
